@@ -9,19 +9,16 @@ function App() {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-
   const [query, setQuery] = useState('');
   const [order, setOrder] = useState('asc');
   const [types, setTypes] = useState([]);
   const [selectType, setSelectType] = useState('all');
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await getPokemon(query, order, currentPage, selectType);
       setPokemon(data.results);
       setLoading(false);
     };
-
     if (loading) {
       fetchData();
     }

@@ -32,7 +32,7 @@ export default function Controls({
           setOrder(e.target.value);
         }}
       >
-        <MenuItem value="asc">Ascedning</MenuItem>
+        <MenuItem value="asc">Ascending</MenuItem>
         <MenuItem value="desc">Descending</MenuItem>
       </Select>
 

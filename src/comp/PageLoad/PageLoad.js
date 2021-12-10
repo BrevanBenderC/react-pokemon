@@ -15,15 +15,15 @@ export default function PokeList({ pokemon, setCurrentPage, setLoading }) {
 
   return (
     <>
-      <div className="poke-list">
-        {pokemon.map((poke) => (
-          <RenderPokes key={poke.id} {...poke} />
+      <div className="compiledMon">
+        {pokemon.map((pokemon) => (
+          <RenderPokes key={pokemon.id} {...pokemon} />
         ))}
       </div>
 
       <div className="button">
         <Button variant="outlined" onClick={handlePrevPage}>
-          Prev Page
+          Previous Page
         </Button>
         <Button variant="outlined" onClick={handleNextPage}>
           Next Page
