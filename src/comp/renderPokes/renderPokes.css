@@ -5,11 +5,13 @@
   justify-content: center;
   background-image: url('../../indiPokebg.jpg');
   background-position: center;
-  background-size: 800px;
+  background-size: 400px;
   background-repeat: no-repeat;
   margin: 50px;
 }
-
+.pokeImg {
+  height: 200px;
+}
 .name {
   text-transform: capitalize;
   background-color: lightslategray;

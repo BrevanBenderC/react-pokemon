@@ -13,7 +13,7 @@ export default function RenderPokes({
 }) {
   return (
     <div className="indiPoke">
-      <img src={url_image} />
+      <img src={url_image} className="pokeImg" />
       <h1 className="name">{pokemon}</h1>
       <span className="stats">Hp: {hp}</span>
       <span className="stats">Attack: {attack}</span>

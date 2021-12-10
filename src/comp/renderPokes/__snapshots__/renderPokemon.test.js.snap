@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the poke card with image, name, hn, attack and defense 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="indiPoke"
+      >
+        <img
+          class="pokeImg"
+          src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+        />
+        <h1
+          class="name"
+        >
+          butterfree
+        </h1>
+        <span
+          class="stats"
+        >
+          Hp: 
+          60
+        </span>
+        <span
+          class="stats"
+        >
+          Attack: 
+          45
+        </span>
+        <span
+          class="stats"
+        >
+          Defense: 
+          50
+        </span>
+        <span
+          class="stats"
+        >
+          Sp Attack: 
+        </span>
+        <span
+          class="stats"
+        >
+          Sp Defense: 
+        </span>
+        <span
+          class="stats"
+        >
+          Speed: 
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="indiPoke"
+    >
+      <img
+        class="pokeImg"
+        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+      />
+      <h1
+        class="name"
+      >
+        butterfree
+      </h1>
+      <span
+        class="stats"
+      >
+        Hp: 
+        60
+      </span>
+      <span
+        class="stats"
+      >
+        Attack: 
+        45
+      </span>
+      <span
+        class="stats"
+      >
+        Defense: 
+        50
+      </span>
+      <span
+        class="stats"
+      >
+        Sp Attack: 
+      </span>
+      <span
+        class="stats"
+      >
+        Sp Defense: 
+      </span>
+      <span
+        class="stats"
+      >
+        Speed: 
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

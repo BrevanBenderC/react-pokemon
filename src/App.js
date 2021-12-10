@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Filter from './comp/Filter/Filter';
 import PageLoad from './comp/PageLoad/PageLoad.js';
 import { getPokemon, getTypes } from './comp/services/pokemon';
+import './App.css';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
