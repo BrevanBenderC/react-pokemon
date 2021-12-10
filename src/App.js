@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import filter from './components/filter/filter';
+import pageLoad from './components/pageLoad/pageLoad';
+import { pokemon } from './services/pokemon';
 
-function App() {
+export function App() {
+  const [pokemon, setPokemon] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState('');
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getPokemon(query);
+      setPokemon(data.results);
+      setLoading(false);
+    };
+    fetchData();
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <filter />
+      <pageLoad />
+      <pageLoad pokemon={pokemon} />
     </div>
   );
 }
-
-export default App;
