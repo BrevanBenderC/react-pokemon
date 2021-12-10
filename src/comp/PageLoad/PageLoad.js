@@ -1,13 +1,34 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import RenderPokes from '../renderPokes/renderPokes';
+import { Button } from '@mui/material';
 
-export default function PageLoad({ pokemon }) {
+export default function PokeList({ pokemon, setCurrentPage, setLoading }) {
+  const handleNextPage = () => {
+    setCurrentPage((prevState) => ++prevState);
+    setLoading(true);
+  };
+
+  const handlePrevPage = () => {
+    setCurrentPage((prevState) => --prevState);
+    setLoading(true);
+  };
+
   return (
-    <div>
-      {pokemon.map((poke) => (
-        <RenderPokes key={poke.id} {...poke} />
-      ))}
-    </div>
+    <>
+      <div className="poke-list">
+        {pokemon.map((poke) => (
+          <RenderPokes key={poke.id} {...poke} />
+        ))}
+      </div>
+
+      <div className="button">
+        <Button variant="outlined" onClick={handlePrevPage}>
+          Prev Page
+        </Button>
+        <Button variant="outlined" onClick={handleNextPage}>
+          Next Page
+        </Button>
+      </div>
+    </>
   );
 }
