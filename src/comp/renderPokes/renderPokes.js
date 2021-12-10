@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function renderPokes ({pokemon}) {
+export default function RenderPokes ({pokemon}) {
   return <div>
       <img src={}/>
       <span>{pokemon}</span>
