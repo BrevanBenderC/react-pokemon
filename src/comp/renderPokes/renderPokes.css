@@ -1,0 +1,21 @@
+.indiPoke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../indiPokebg.jpg');
+  background-position: center;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  margin: 50px;
+}
+
+.name {
+  text-transform: capitalize;
+  background-color: lightslategray;
+  border: 3px solid black;
+}
+.stats {
+  background-color: gray;
+  border: 3px solid black;
+}
